@@ -7,15 +7,12 @@ import random
 import speech_recognition as sr
 import wikipedia
 import datetime
-import wolframalpha
 import os
 import sys
 
 #speech engine
 engine = pyttsx3.init('sapi5')
 
-#wolframalpha api id. Generate your own id with wolframalpha site.
-client = wolframalpha.Client('-------------')
 
 voices = engine.getProperty('voices')
 engine.setProperty('voice', voices[len(voices)-1].id)
